@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" href="img/favicon.png" type="favicon">
+    
+    <title>KitapEvim</title>
+  </head>
+  <body style="color: #E9ECEF;" >
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" > 
+        <a class="navbar-brand" href="#">KitapEvim</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Anasayfa <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="books.html">Kitaplar</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-outline-light float-right" data-toggle="modal" data-target="#exampleModal">
+            Giriş Yap
+          </button>
+          &nbsp; &nbsp; &nbsp;
+          <button type="button" class="btn btn-outline-light float-right" data-toggle="modal" data-target="#Modal1">
+            Kayıt Ol
+          </button>
+
+        </div>
+      </nav>
+    <!-- navbar end  -->
+
+    <!-- login start  -->
+
+    <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="exampleModalLabel">Hoş geldiniz!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+              <form>
+                <div class="form-group text-dark">
+                  <label for="exampleInputEmail1">Email Adresiniz:</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">E-posta adresinizi asla paylaşmayacağız.</small>
+                </div>
+                <div class="form-group text-dark">
+                  <label for="exampleInputPassword1">Şifreniz:</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check text-dark">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Beni hatırla!</label>
+                </div>
+                
+              </form>
+
+            </div>
+            <div class="modal-footer">
+              <a href="index.html" class="btn btn-outline-primary" role="button">Giriş Yap</a>
+              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Kapat</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- login end  -->
+
+    <!-- register start  -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="exampleModalLabel">Hesap Oluştur</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+              <form class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3 text-dark">
+                    <label for="validationCustom01">Adınız:</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <div class="valid-feedback">
+                      
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3 text-dark">
+                    <label for="validationCustom02">Soyadınız:</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group text-dark">
+                      <label for="validationCustom04">Şifreniz:</label>
+                      <input type="password" class="form-control" id="validationCustom04" required>
+                      <div class="invalid-feedback">
+                        Lütfen geçerli bir şifre giriniz.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3 text-dark">
+                    <label for="validationCustom03">E-posta adresiniz:</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                      Lütfen geçerli bir e-posta giriniz.
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="form-group text-dark">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Kişisel Verilerin Korunması metnini okudum ve kabul ediyorum.
+                    </label>
+                    <div class="invalid-feedback">
+                      Hükümleri kabul etmelisiniz.
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-outline-primary">Üye Ol</button>
+                  <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Kapat</button>
+                </div>
+          
+              </form>
+
+              <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- register end  -->
+
+
+    <!-- articles start -->
+    <div class="jumbotron">
+        <h1 class="display-4 text-dark">Hoş geldiniz!</h1>
+        <p class="lead text-dark">Birbirinden harika kitapları sitemizde bulabilirsiniz.</p>
+    </div>
+      
+      <h3 class="text-dark text-center" >Çok Satanlar<span class="badge badge-danger">!</span></h3>
+
+    <br>
+
+    <div class="row mt-3 ml-5" >
+        <div class="col-sm-4" >
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://productimages.hepsiburada.net/s/24/550/10082394013746.jpg/format:webp" alt="Card image cap">
+                <div class="card-body">
+                   <h5 class="card-title text-dark">Mima</h5>
+                   <p class="card-text text-dark">
+                    Yüce ZEREY
+                    <span class="badge badge-pill badge-dark">30 TL</span>               
+                    </p>
+                  <a href="#" class="btn btn-outline-primary">İncele</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-sm-4" >
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://productimages.hepsiburada.net/s/26/550/10154953998386.jpg/format:webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">Teftiş</h5>
+                  <p class="card-text text-dark">Josh MALERMAN
+                    <span class="badge badge-pill badge-dark">48 TL</span>
+                  </p>
+                  <a href="#" class="btn btn-outline-primary">İncele</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-sm-4" >
+            <div class="card" style="width: 18rem;">
+                <img src="https://productimages.hepsiburada.net/s/56/550/11258850967602.jpg/format:webp" class="card-img-top" alt="">
+                <div class="card-body" >
+                    <h5 class="card-title text-dark">Milena'ya Mektuplar</h5>
+                    <p class="card-text text-dark">
+                        Franz KAFKA
+                        <span class="badge badge-pill badge-dark">50 TL</span>
+                    </p>
+                    <a href="books.html" class="btn btn-outline-primary">İncele</a>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <!-- articles  end -->
+
+    <!-- footer start  -->
+    <footer class="container-fluid mt-4" >
+        <div class="row">
+            <div class="col-12 col-lg" >
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+                  <a class="navbar-brand" href="#">KitapEvim</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" href="#">Anasayfa <span class="sr-only"></span></a>
+                      <a class="nav-link" href="about-us.html">Hakkında</a>
+                      <a class="nav-link" href="contact.html">İletişim</a>
+                    </div>
+                  </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end  -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
